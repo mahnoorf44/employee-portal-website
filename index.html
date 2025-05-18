@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR PORTAL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+header,footer {
+background-color: rgb(250, 253, 253);
+text-align: center;
+padding: 2px;
+background-image: url(images/pngtree-aesthetic-background-with-coconut-leaf-and-three-lines-pattern-on-soft-picture-image_1738730.jpg);
+   }
+ .navitem {
+ display: inline;
+ padding: 15px;
+}
+.navitem a {
+ text-decoration: none;
+ color: rgb(22, 21, 21);
+ }
+  .employeetable {
+  text-align: center;
+ }
+  .registerform {  
+    text-align: center;
+  }
+ 
+ table {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid rgb(66, 65, 62);
+    padding: 10px;
+    }
+    .contactus {
+      text-align: center;
+    }
+    #customers {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {   
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1f2020;
+  color: white;
+}
+body {
+  background-image: url(images/pngtree-aesthetic-background-with-coconut-leaf-and-three-lines-pattern-on-soft-picture-image_1738730.jpg)
+}
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+</style>
+
+</head>
+  <header>
+
+    <h1 style="background-color: rgb(230, 238, 232);">
+ Welcome to our company hr portal
+    </h1>
+    <nav>
+    <ul>
+        <li class="navitem" style="background-color: rgb(215, 216, 216);"><a href="#employee-registration">employee registration</a></li>
+        <li class="navitem" style="background-color: rgb(215, 219, 219);"><a href="#employee-directory">employee directory</a></li>
+        <li class="navitem" style="background-color: rgb(215, 223, 223);"><a href="#contact-us">contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <image src="images/professional-mature-business-woman-manager-explaining-corporate-software-elearning-solutions-helping-young-employee-work-busy-business-people-using-laptop-talking-office-vertical-shot_1254992-195202.jpg" width="100%" height="450"></image>
+
+<section id="employee-registration" class="registerform">
+<h1>Employee registration</h1>
+<p style="font-size: larger;"> fill the form below to register as employee.</p>
+<form>
+  <label for="name">name:</label>
+  <input type="text" id="name" style="font-size:larger"> <br><br>
+  <label for="email">email id:</label>
+  <input type="email" id="email"> <br><br>
+  <label for="password">password:</label>
+  <input type="password" id="password"> <br><br>
+  <label for="age">age:</label>
+  <input type="number" id="age"> <br><br>
+  <label for="role">select role:</label>
+  <select>
+    <option>software engineer</option>
+    <option>product manager</option>
+    <option>designer</option>
+    <option>hr representative</option>
+   </select><br><br>
+   <label for="joiningdate">select joining date:</label>
+   <input type="date" id="joiningdate"> <br><br>
+   <input type="submit">
+</form>
+<image src="images/istockphoto-1466985741-612x612.jpg"></image>
+</section>
+
+
+<section id="employee-directory" class="employeetable">
+  <h2>Employee directory</h2>
+  <p>list of all regsitered employees.</p>
+  <table id="customers">
+   <tr>
+ <th>employee id</th>
+  <th>employee name</th>
+  <th>employee role</th>
+</tr>
+<tr>
+  <td>246</td>
+  <td>fatimah</td>
+  <td>software designer</td>
+  </tr>
+  <tr>
+    <td>248</td>
+    <td>saima </td>
+    <td>product manager</td>
+</tr>
+<tr>
+  <td>260</td>
+  <td>iqra</td>
+  <td>designer</td>
+</tr>
+
+</table>
+</section>
+
+<section id="contact-us" class="contactus">
+  <h2>contact us</h2>
+  <p>you can contact us company@official.com.or visit us at 9am to 6pm.</p>
+  <image src="images/istockphoto-1354842602-612x612.jpg"></image>
+  </section>
+  </body>
+  <script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    let size = fruits.length;
+    document.getElementById("demo").innerHTML = size;
+    </script>
+</html>
